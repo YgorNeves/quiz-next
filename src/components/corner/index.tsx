@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Wrapper, FooterWrapper, SVGWrapper } from "./styled";
+import { Wrapper, SVGWrapper } from "./styled";
 
 interface Props {
     projectUrl: string;

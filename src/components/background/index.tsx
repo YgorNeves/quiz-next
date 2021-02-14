@@ -1,13 +1,13 @@
 // src/components/background/index.js
 import styled from "styled-components";
-import data from "@public/meta.json";
 
 export const QuizBackground = styled.div`
     width: 100%;
     height: 100vh;
     background-size: cover;
     background-position: center;
-    background-image: url(${data.background});
+    background-image: url(${({ backgroundImage }) => backgroundImage});
+
     background-color: rgb(158, 204, 211);
     flex: 1;
 

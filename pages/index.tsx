@@ -4,7 +4,8 @@ import { Footer, QuizBackground, Widget, Corner, Logo } from "@components";
 import styled from "styled-components";
 import GlobalStyle from "@styles/globalStyles";
 import PropTypes from "prop-types";
-import { i18n, Link, withTranslation } from "../i18n";
+import { withTranslation } from "../i18n";
+import data from "@public/meta.json";
 
 export const QuizContainer = styled.div`
     width: 100%;
@@ -16,9 +17,10 @@ export const QuizContainer = styled.div`
         padding: 15px;
     }
 `;
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const Home = ({ t }) => {
     return (
-        <QuizBackground>
+        <QuizBackground backgroundImage={data.background}>
             <GlobalStyle />
             <QuizContainer>
                 <Logo />

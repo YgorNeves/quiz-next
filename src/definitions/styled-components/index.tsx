@@ -13,6 +13,7 @@ export const ThemeContext = React.createContext({
     toggle: () => undefined,
 });
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const useTheme = () => {
     const { theme, toggle } = React.useContext(ThemeContext);
 
